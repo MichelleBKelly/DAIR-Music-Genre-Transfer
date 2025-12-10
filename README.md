@@ -14,21 +14,8 @@ Exploring the use of machine learning and music information retrieval for instru
 ```
 
 ## My Contributions
-### Model Architecture
-- Implemented the **AdversarialClassifier** (`nn.Module`) used for genre discrimination in the latent space.
-- Developed the **EncoderLSTM** and **DecoderLSTM** modules, including bidirectional LSTMs, hidden-state reshaping, and linear projections for μ and σ.
-- Integrated LSTM modules into a **modified VAE architecture**, enabling sequence-based latent encoding and reconstruction.
-
-### Training & Loss Integration
-- Added custom loss logic (`A_loss`) and wired the adversarial classifier into the VAE training loop.
-- Modified latent sampling, forward passes, and data reshaping to support LSTM-based models.
-- Updated argument parsing (`opts.py`) to support new hyperparameters, model types, and dataset paths.
-
-### Data & Inference Pipeline
-- Updated dataset handling to reshape and prepare symbolic music tensors for LSTM processing.
-- Implemented a **full inference script**:
-  - MIDI tokenization using REMI  
-  - Sequence padding/truncation  
-  - Running the trained model  
-  - Genre transfer by manipulating latent vectors  
-  - Converting output tokens back into MIDI  
+- Implementing the LSTM-based VAE encoder and decoder for sequential musical feature representation.
+- Refining VAE loss functions, KL divergence behavior, and reshaping logic for stable training.
+- Updating and improving the adversarial genre classifier for better latent disentanglement.
+- Adding evaluation utilities (remi_eval.py) and improving training configuration options.
+- Debugging and refactoring core components, improving sequence handling, reconstruction accuracy, and overall model stability.
