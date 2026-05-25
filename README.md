@@ -12,10 +12,3 @@ Exploring the use of machine learning and music information retrieval for instru
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Documentation
 ```
-
-## My Contributions
-- Implementing the LSTM-based VAE encoder and decoder for sequential musical feature representation.
-- Refining VAE loss functions, KL divergence behavior, and reshaping logic for stable training.
-- Updating and improving the adversarial genre classifier for better latent disentanglement.
-- Adding evaluation utilities (remi_eval.py) and improving training configuration options.
-- Debugging and refactoring core components, improving sequence handling, reconstruction accuracy, and overall model stability.
